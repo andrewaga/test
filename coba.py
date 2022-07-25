@@ -4,12 +4,34 @@ minuman = [
     ['teh',4000],
     ['air',3000]
 ]
+v=0
+while v< len(minuman):
+    for index,minum in enumerate(minuman):
+        print (f'no.{index+1} nama:{minum[0]}',f'harga:{minum[1]}')
 
-for minum,harga in minuman:
-    print (f'nama:{minum}',f'harga:{harga}')
+    eceran= input('pilih no?')
+    ecer= int(eceran)-1
 
-for urutan , nomor in enumerate(minuman) :
-    print(urutan+1 , nomor)
+    hargamenu=minuman[ecer][1]
+
+    total= input('berapa?')
+    tot=int(total)
+    totalan=hargamenu*tot
+
+    print(f'totalny {totalan}')
+    # v=v+1
+    bayar=input('bayar')
+    bayaran=int(bayar)
+    kembalian= bayaran - totalan
+    if bayaran <=totalan :
+        print('uang kurang')
+    else :
+        print(f'kembalian:{kembalian}')
+
+    if input('apa ingin mngulang lagi?')=='t':
+        break
+# for urutan , nomor in enumerate(minuman) :
+#     print(urutan+1 , nomor)
     # print(type(urutan)) 
 
 # minuman = {
