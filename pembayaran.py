@@ -30,6 +30,10 @@ while v< len(minuman):
 
     if input('apa ingin mngulang lagi?')=='t':
         break
+
+# ketika uang bayar kurang maka kembali di proses pembayaran
+
+
 # for urutan , nomor in enumerate(minuman) :
 #     print(urutan+1 , nomor)
     # print(type(urutan)) 
